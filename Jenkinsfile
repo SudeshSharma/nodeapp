@@ -9,11 +9,7 @@ pipeline {
         git 'https://github.com/SudeshSharma/nodeapp.git'
       }
     }        
-    stage('Install dependencies') {
-      steps {
-        sh 'npm i -save express'
-      }
-    }     
+     
     stage('Test') {
       steps {
          sh 'node index.js'
